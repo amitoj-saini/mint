@@ -1,0 +1,105 @@
+:root {
+    --bg: rgba(23, 21, 26);
+    --s-bg: rgb(29, 29, 29);
+    --text: rgb(255, 255, 255);
+    --dim-text: rgb(104, 104, 104);
+    --secondary: #4d55f1;
+    --gradient-1: linear-gradient(to right, rgb(57, 128, 233), rgb(100, 200, 200));
+    --gradient-2: linear-gradient(to right, #a486c2, var(--secondary));
+    --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html, body, main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    animation: onload 0.5s;
+}
+
+body {
+    font-family: var(--font);
+    background-color: rgba(23, 21, 26, 0.9);
+    color: var(--text);
+    font-weight: 300;
+}
+
+.top-bar {
+    height: 40px;
+    padding: 0px 5px 0px 5px;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.circle-btn {
+    height: 12px;
+    width: 12px;
+    border: none;
+    border-radius: 50%;
+    opacity: 70%;
+    transition: 0.1s;
+    cursor: pointer;
+    -webkit-app-region: no-drag;
+}
+
+.circle-btn:hover {
+    opacity: 100%;
+}
+
+.dragable {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+}
+
+.hover {
+    transition: 0.4s;
+}
+
+.hover:hover {
+    color: rgba(255, 255, 255, 0.74) !important;
+    opacity: 100% !important;
+    cursor: pointer;
+}
+
+@keyframes onload {
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+
+.text-gradient {
+    background-clip: text;
+    background-color: white;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.input {
+    box-shadow: 0 0 0.2rem 0.1rem var(--secondary) !important;
+    background-color: var(--s-bg) !important;
+    color: var(--text) !important;
+    border: none !important;
+    transition: 0.4s;
+    min-width: 400px;
+    font-size: 12px;
+}
+
+.input:focus {
+    box-shadow: 0 0 0.15rem 0.2rem var(--secondary) !important;
+}
+
+.icn-btn {
+    transition: 0.2s;
+    cursor: pointer;
+    opacity: 75%;
+}
+
+.icn-btn:hover {
+    opacity: 100%;
+}
