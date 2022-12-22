@@ -3,9 +3,33 @@
     <h1 class="h4 fw-light">Need help <span style="background-image: var(--gradient-2);" class="text-gradient">finding</span> <span style="background-image: var(--gradient-1);" class="text-gradient">someone?</span></h1>
     <p style="font-size: 12px;" class="hover small text-muted">No problem, if they exist, they can be found thanks to the power of OSINT!</p>
 </div>
-<div class="row m-0 d-flex justify-content-center mt-2">
+<div style="max-width: 460px;" class="m-auto row m-0 d-flex justify-content-center mt-2">
+    <div style="color: #a486c2;" class="col form-group">
+        <label  for="name">Name (Optional)</label>
+        <input type="text" id="name" placeholder="Enter Name (Optional)">
+    </div>
+
+    <div style="color: rgb(57, 128, 233);" class="col form-group">
+        <label for="lastname">Last Name (Optional)</label>
+        <input type="text" id="lastname" placeholder="Enter Last Name (Optional)">
+    </div>
+
+    <div class="w-100 mt-2 mb-2"></div>
+
+    <div style="color: #4d55f1;" class="col form-group">
+        <label  for="name">Middle Name (Optional)</label>
+        <input type="text" id="middlename" placeholder="Enter Middle Name (Optional)">
+    </div>
+
+    <div style="color: rgb(100, 200, 200);" class="col form-group">
+        <label for="lastname">Username (Optional)</label>
+        <input type="text" id="usernamename" placeholder="Enter Username (Optional)">
+    </div>
+
+    <div class="w-100 mt-2 mb-2"></div>
+
     <div class="col-auto">
-        <input id="query" type="text" class="input form-control" placeholder="Search by Name, Username etc...">
+        <p id="queryguide" style="font-size: 12px;" class="hover small text-muted">Make sure to fill out atleast one field for valid query.</p>
     </div>
 </div>
 <div class="row m-0">
